@@ -12,8 +12,8 @@ export default function Home() {
         <div>
           <Image 
             src="/logo.png"
-            width={500}
-            height={500}
+            width={50}
+            height={50}
             alt="Arena's logo"
           />
         </div>
