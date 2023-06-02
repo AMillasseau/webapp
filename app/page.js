@@ -17,6 +17,7 @@ export default function Home() {
             alt="Arena's logo"
           />
         </div>
+      </div>
 
       <div className={style.center}>
         
