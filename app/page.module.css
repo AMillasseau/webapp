@@ -10,6 +10,7 @@
 .head {
   background-color: lightblue;
   top:0;
+  heigth:10%;
   position: fixed;
   display: inherit;
   flex-direction: row;
