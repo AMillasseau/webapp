@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 
       <div className={style.tail}>
-        
+        <p> Credits </p>
       </div>
     
       </main>
