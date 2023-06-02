@@ -9,7 +9,7 @@ export default function Home() {
   
       <div className={style.head}>
         <p> Website of Arena </p>
-        <div>
+        <div className={style.logo}>
           <Image 
             src="/logo.png"
             width={50}
