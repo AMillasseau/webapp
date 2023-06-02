@@ -1,14 +1,22 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
 }
 
 .head {
-  
+  display: inherit;
+  flex-direction: row;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
 }
 
 .center {
