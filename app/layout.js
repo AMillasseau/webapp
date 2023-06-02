@@ -10,9 +10,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <head>
     <title> Arena Catalog </title>
-    <meta name="description" content="Free Web tutorials">
-    <meta name="author" content="Adrien Millasseau">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials"/>
+    <meta name="author" content="Adrien Millasseau"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body className={font1.className}>{children}</body>
     </html>
