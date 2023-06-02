@@ -9,6 +9,8 @@
 
 .head {
   background-color: lightblue;
+  top:0;
+  position: fixed;
   display: inherit;
   flex-direction: row;
   justify-content: inherit;
