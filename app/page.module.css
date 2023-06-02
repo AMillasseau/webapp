@@ -8,6 +8,7 @@
 }
 
 .head {
+  background-color: lightblue;
   display: inherit;
   flex-direction: row;
   justify-content: inherit;
