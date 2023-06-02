@@ -2,8 +2,8 @@ import 'app/layout.css'
 import { Secular_One } from 'next/font/google'
 
 const font1 = Secular_One({ 
-  subsets : ['latin']
-  weights: `400`
+  subsets : ['latin'],
+  weight : `400`,
 })
 
 export default function RootLayout({ children }) {
