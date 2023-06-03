@@ -35,11 +35,11 @@ export default function Home() {
           </a>
         </div>
         <div className={style.longtxt}>
-        <a>
+        <pre>
           This website was created by Adrien Millasseau.
           This website has for only purpose a demonstration and nothing on this website can lead to anything other than the modification of the said site. Anything that contradicts this is purely fiction.
           This website emulate the website of a fictional boardgame asociation where it is possible to consult the news of the asociation and book boardgames to borrow them.
-        </a>
+        </pre>
         </div>
       </div>
 
