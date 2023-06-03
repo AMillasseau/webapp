@@ -44,6 +44,7 @@ align-items: inherit;
 
 .backarrow {
   align-items: start;
+  padding-bottom: 40px;
 }
 
 .longtxt {
