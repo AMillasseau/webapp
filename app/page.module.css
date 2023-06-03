@@ -43,6 +43,7 @@ align-items: inherit;
 }
 
 .backarrow {
+  width:100%;
   align-items: start;
   padding-bottom: 40px;
 }
