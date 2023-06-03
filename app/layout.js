@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <meta name="description" content="Free Web tutorials"/>
       <meta name="author" content="Adrien Millasseau"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="icon" href="/logo.png"/>
+      <link rel="icon" type="image/png" href="/logo.png"/>
     </head>
     <body className={font1.className}>{children}</body>
     </html>
