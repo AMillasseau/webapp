@@ -28,7 +28,11 @@ export default function Home() {
       </div>
 
       <div className={style.tail}>
-        <p> Credits </p>
+        <div className={style.notwide}>
+          <p> Credits </p>
+          <p> • </p>
+          <p> Ask us </p>
+        </div>
       </div>
     
       </main>
