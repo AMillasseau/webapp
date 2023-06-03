@@ -44,7 +44,7 @@ align-items: inherit;
   flex-direction: row;
   justify-content: inherit;
   align-items: inherit;
-  font-size: 0.5rem;
+  font-size: 1rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
