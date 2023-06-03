@@ -38,6 +38,12 @@ align-items: inherit;
   flex-direction: inherit;
   justify-content: inherit;
   align-items: inherit;
+  align-content: start;
+  
+}
+
+.backarrow {
+  align-items: start;
 }
 
 .longtxt {
