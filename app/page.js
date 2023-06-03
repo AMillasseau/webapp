@@ -8,14 +8,16 @@ export default function Home() {
     <main className={style.main}>
   
       <div className={style.head}>
-        <p> Website of Arena </p>
-        <div className={style.logo}>
-          <Image 
-            src="/logo.png"
-            width={100}
-            height={100}
-            alt="Arena's logo"
-          />
+        <div width=80%>
+          <p> Website of Arena </p>
+          <div className={style.logo}>
+            <Image 
+              src="/logo.png"
+              width={100}
+              height={100}
+              alt="Arena's logo"
+            />
+          </div>
         </div>
       </div>
 
