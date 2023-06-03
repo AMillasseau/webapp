@@ -29,9 +29,9 @@ export default function Home() {
 
       <div className={style.tail}>
         <div className={style.notwide}>
-          <p> Credits </p>
+          <a href="/credits"> Credits </a>
           <p> • </p>
-          <p> Ask us </p>
+          <a> Ask us </a>
         </div>
       </div>
     
