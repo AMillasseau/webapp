@@ -23,8 +23,8 @@ export default function Home() {
 
       <div className={style.center}>
         <div className={style.backarrow}>
+          <a href="../">
           <Image 
-            href="../"
             src="/backarrow.png"
             alt="Back"
             /*className={styles.vercelLogo}*/
@@ -32,6 +32,7 @@ export default function Home() {
             height={70}
             priority
             />
+          </a>
         </div>
         <div className={style.longtxt}>
         <a>
