@@ -26,6 +26,10 @@
 
 .notwide{
 width:80%;
+display: inherit;
+flex-direction: row;
+justify-content: inherit;
+align-items: inherit;
 }
 
 .center {
