@@ -22,7 +22,7 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
-        <div className={style.bakarrow}>
+        <div className={style.backarrow}>
           <Image 
             href="../"
             src="/backarrow.png"
