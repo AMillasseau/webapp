@@ -24,6 +24,7 @@ export default function Home() {
       <div className={style.center}>
         <div className={style.bakarrow}>
           <Image 
+            href="../"
             src="/backarrow.png"
             alt="Back"
             /*className={styles.vercelLogo}*/
