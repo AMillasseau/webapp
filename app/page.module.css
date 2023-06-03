@@ -33,6 +33,15 @@ align-items: inherit;
 }
 
 .center {
+  width:80%;
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.longtxt {
+  font-size: 1rem;
 }
 
 .tail {
