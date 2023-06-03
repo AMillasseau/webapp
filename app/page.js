@@ -29,7 +29,7 @@ export default function Home() {
 
       <div className={style.tail}>
         <div className={style.notwide}>
-          <a href="/credits"> Credits </a>
+          <a className={style.a} href="/credits"> Credits </a>
           <p> • </p>
           <a> Ask us </a>
         </div>
