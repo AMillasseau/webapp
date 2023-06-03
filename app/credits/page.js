@@ -22,6 +22,16 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
+        <div className={style.bakarrow}>
+          <Image 
+            src="/backarrow.png"
+            alt="Back"
+            /*className={styles.vercelLogo}*/
+            width={80}
+            height={70}
+            priority
+            />
+        </div>
         <div className={style.longtxt}>
         <a>
           This website was created by Adrien Millasseau.
