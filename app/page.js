@@ -8,7 +8,7 @@ export default function Home() {
     <main className={style.main}>
   
       <div className={style.head}>
-        <div width='80%'>
+        <div className={style.notwide}>
           <p> Website of Arena </p>
           <div className={style.logo}>
             <Image 
