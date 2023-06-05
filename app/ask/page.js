@@ -34,11 +34,12 @@ export default function Home() {
             />
             </a>
           </div>
+          <form action="ask/save.php" method="get">
           <input className={style.ipt} name="name" type="text" placeholder="Name" autocomplete="off" required/>
           <input className={style.ipt} name="contact" type="email" placeholder="Email contact"/>
           <textarea className={style.txta} name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
-          <button className={style.btn} onClick={}> Submit </button>
-          
+          <button className={style.btn} type="submit"> Submit </button>
+          </form>
       </div>
 
       <div className={style.tail}>
