@@ -1,9 +1,32 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+
 import style from 'app/page.module.css'
 
 export default function Home() {
+  const saveInputValue = () => {
+    const inputValue = document.getElementById("inputField").value;
+
+    // Make an HTTP POST request to the server endpoint
+    fetch('/api/save-input', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ value: inputValue })
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('Input value saved:', inputValue);
+        } else {
+          console.log('Failed to save input value');
+        }
+      })
+      .catch(error => {
+        console.log('Error:', error);
+      });
+  };
+
   return (
     <div>
     <main className={style.main}>
