@@ -28,7 +28,7 @@ export default function Home() {
             src="/backarrow.png"
             alt="Back"
             width={10}
-            height=auto
+            height="auto"
             priority
             />
           </a>
