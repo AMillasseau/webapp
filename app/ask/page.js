@@ -42,7 +42,7 @@ export default function Home() {
           <input className={style.ipt} id="s1" name="name" type="text" placeholder="Name" autocomplete="off" required/>
           <input className={style.ipt} id="s2" name="contact" type="email" placeholder="Email contact"/>
           <textarea className={style.txta} id="s3" name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
-          <button className={style.btn} onclick="addToCSV();"> Submit </button>
+          <button className={style.btn} onclick="addToCSV()"> Submit </button>
         
         <button className={style.btn} > Test </button>
       </div>
