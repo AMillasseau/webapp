@@ -58,6 +58,11 @@ align-items: inherit;
   font-size: 2rem;
 }
 
+.button {
+  font-size: 2rem;
+  align-item: start;
+}
+
 .tail {
   background-color: lightblue;
   top:90%;
