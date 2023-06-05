@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import style from 'app/page.module.css'
 
 export default function Home() {
   async function createCSV() {
-    const string1 = inputRef1.current.value;
-    const string2 = inputRef2.current.value;
-    const string3 = inputRef3.current.value;
+    const string1 = document.getElementById('s1').value;
+  const string2 = document.getElementById('s2').value;
+  const string3 = document.getElementById('s3').value;
 
     try {
       const response = await fetch('/api/create-csv', {
@@ -29,9 +29,15 @@ export default function Home() {
     }
   };
   
-  const inputRef1 = useRef(null);
-  const inputRef2 = useRef(null);
-  const inputRef3 = useRef(null);
+  useEffect(() => {
+    const button = document.getElementById('create-csv-btn');
+    button.addEventListener('click', createCSV);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      button.removeEventListener('click', createCSV);
+    };
+  }, []);
 
   return (
     <div>
