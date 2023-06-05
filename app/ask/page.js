@@ -22,7 +22,7 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
-        <form name="xyz_form" action="app/ask/get.php" method="get">
+        <form name="xyz_form" action="ask/get.php" method="get">
           <div style={{paddingBottom: '10px'}} className={style.backarrow}>
             <a href="../">
             <Image 
