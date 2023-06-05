@@ -22,9 +22,9 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
-        <input className={style.ipt} id="name" type="text" autocomplete="off"/>
-        <input className={style.ipt} id="contact" type="email" autocomplete="email"/>
-        <input className={style.ipt} id="text" type="text" autocomplete="off"/>
+        <input className={style.ipt} id="name" type="text" placeholder="Name" autocomplete="off"/>
+        <input className={style.ipt} id="contact" type="email" placeholder="Email contact"/>
+        <input className={style.ipt} id="text" type="text" placeholder="Your request" autocomplete="off"/>
         <button className={style.btn} id="submit"> Submit </button>
       </div>
 
