@@ -22,9 +22,10 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
-        
-        
-        
+        <input className={style.ipt} id="name" type="text">
+        <input className={style.ipt} id="contact" type="text">
+        <input className={style.ipt} id="text" type="text">
+        <button className={style.btn} id="submit"> Submit </button>
       </div>
 
       <div className={style.tail}>
