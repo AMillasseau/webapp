@@ -5,7 +5,7 @@ import React from 'react';
 import style from 'app/page.module.css'
 
 export default function Home() {
-  const createCSV = async () => {
+  function async createCSV() {
     const string1 = document.getElementById('s1').value;
     const string2 = document.getElementById('s2').value;
     const string3 = document.getElementById('s3').value;
