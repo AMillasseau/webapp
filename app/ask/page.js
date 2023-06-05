@@ -6,31 +6,7 @@ import style from 'app/page.module.css'
 export default function Home() {
   return (
     <div>
-    <script>
-    async function createCSV() {
-      const string1 = document.getElementById('s1').value;
-      const string2 = document.getElementById('s2').value;
-      const string3 = document.getElementById('s3').value;
-
-      try {
-        const response = await fetch('/api/create-csv', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ string1, string2, string3 })
-        });
-
-        if (response.ok) {
-          console.log('CSV file created successfully.');
-        } else {
-          console.error('Failed to create CSV file.');
-        }
-      } catch (error) {
-        console.error('An error occurred:', error);
-      }
-    }
-  </script>
+    <scriptsrc="/scripts/create-csv.js" />
     <main className={style.main}>
   
       <div className={style.head}>
