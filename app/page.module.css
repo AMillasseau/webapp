@@ -60,7 +60,7 @@ align-items: inherit;
 
 .txta {
   width:100%;
-  resize: false;
+  resize: none;
   font-size: 1rem;
 }
 
