@@ -6,7 +6,7 @@ import style from 'app/page.module.css'
 export default function Home() {
   return (
     <div>
-    <script type="text/javascript">
+    <script>
     async function createCSV() {
       const string1 = document.getElementById('s1').value;
       const string2 = document.getElementById('s2').value;
