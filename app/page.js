@@ -31,7 +31,7 @@ export default function Home() {
         <div className={style.notwide}>
           <a className={style.a} href="/credits"> Credits </a>
           <p> • </p>
-          <a> Ask us </a>
+          <a className={style.a} href="/ask"> Ask us </a>
         </div>
       </div>
     
