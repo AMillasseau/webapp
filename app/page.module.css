@@ -45,7 +45,7 @@ align-items: inherit;
   width:100%;
   align-items: start;
   padding-bottom: 40px;
-  z-index: 1;
+  z-index: 4;
 }
 
 .longtxt {
