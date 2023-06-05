@@ -24,7 +24,7 @@ export default function Home() {
       <div className={style.center}>
         <input className={style.ipt} id="name" type="text" placeholder="Name" autocomplete="off"/>
         <input className={style.ipt} id="contact" type="email" placeholder="Email contact"/>
-        <input className={style.ipt} id="text" type="text" placeholder="Your request" autocomplete="off"/>
+        <textarea className={style.ipt} id="text" type="text" placeholder="Your request" autocomplete="off" rows=5></textarea>
         <button className={style.btn} id="submit"> Submit </button>
       </div>
 
