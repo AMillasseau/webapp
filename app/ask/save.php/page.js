@@ -15,13 +15,6 @@ import style from 'app/page.module.css'
 export default function Home() {
   return (
     <div>
-   <?php
-$ar = [$_GET["name"],$_GET["contat"],$_GET["message"] 
- $fname = 'data.csv'; //NAME OF THE FILE
- $fcon = fopen($fname,'a');
- $fputcsv($con,$ar);
- fclose($fcon);
- ?>
     <main className={style.main}>
   
       <div className={style.head}>
@@ -63,5 +56,12 @@ $ar = [$_GET["name"],$_GET["contat"],$_GET["message"]
     
       </main>
       </div>
+<?php
+$ar = [$_GET["name"],$_GET["contat"],$_GET["message"] 
+ $fname = 'data.csv'; //NAME OF THE FILE
+ $fcon = fopen($fname,'a');
+ $fputcsv($con,$ar);
+ fclose($fcon);
+ ?>
     )
 }
