@@ -22,12 +22,12 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
-        <div style={{paddingRight: '10px'}} className={style.backarrow}>
+        <div style={{paddingBottom: '10px'}} className={style.backarrow}>
           <a href="../">
           <Image 
             src="/backarrow.png"
             alt="Back"
-            width={10}
+            width={30}
             height="auto"
             priority
             />
