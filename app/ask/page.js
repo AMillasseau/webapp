@@ -1,38 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React , { useRef } from 'react';
 
 import style from 'app/page.module.css'
 
 export default function Home() {
-  async function createCSV() {
-    const string1 = inputRef1.current.value;
-    const string2 = inputRef2.current.value;
-    const string3 = inputRef3.current.value;
-
-    try {
-      const response = await fetch('/api/create-csv', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ string1, string2, string3 })
-      });
-
-      if (response.ok) {
-        console.log('CSV file created successfully.');
-      } else {
-        console.error('Failed to create CSV file.');
-      }
-    } catch (error) {
-      console.error('An error occurred:', error);
-    }
-  };
-  
-  const inputRef1 = useRef(null);
-  const inputRef2 = useRef(null);
-  const inputRef3 = useRef(null);
-
   return (
     <div>
     <main className={style.main}>
@@ -63,10 +34,10 @@ export default function Home() {
             />
             </a>
           </div>
-          <input className={style.ipt} ref={inputRef1} name="name" type="text" placeholder="Name" autocomplete="off" required/>
-          <input className={style.ipt} ref={inputRef2} name="contact" type="email" placeholder="Email contact"/>
-          <textarea className={style.txta} ref={inputRef3} name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
-          <button className={style.btn} onClick={createCSV()}> Submit </button>
+          <input className={style.ipt} name="name" type="text" placeholder="Name" autocomplete="off" required/>
+          <input className={style.ipt} name="contact" type="email" placeholder="Email contact"/>
+          <textarea className={style.txta} name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
+          <button className={style.btn} onClick={}> Submit </button>
           
       </div>
 
