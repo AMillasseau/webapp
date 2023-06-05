@@ -22,7 +22,7 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
-        <div style="padding-bottom: 10px" className={style.backarrow}>
+        <div style={{paddingRight: '10px'}} className={style.backarrow}>
           <a href="../">
           <Image 
             src="/backarrow.png"
