@@ -8,7 +8,7 @@ export default function Home() {
     <script type="text/javascript">
       const fs = require('fs');
       function addToCSV(string1, string2, string3) {
-        const data = `${string1},${string2},${string3}\n`;
+        const data = string1 + ',' + string2 + ',' + string3 + '\n';
         fs.appendFile('data.csv', data, (err) => {
           if (err) {
             console.error(err);
