@@ -9,13 +9,7 @@ export default function Home() {
       const fs = require('fs');
       function addToCSV(string1, string2, string3) {
         let data = string1 + ',' + string2 + ',' + string3 + '\n';
-        fs.appendFile('data.csv', data, (err) => {
-          if (err) {
-            console.error(err);
-          return;
-          }
-          console.log('Data appended to CSV file successfully.');
-        });
+        fs.appendFile('data.csv', data, (err) => ())
       }
     </script>
     <main className={style.main}>
