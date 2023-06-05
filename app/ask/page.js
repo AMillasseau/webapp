@@ -5,7 +5,7 @@ import style from 'app/page.module.css'
 
 export default function Home() {
   return (
-    <script type=
+    <script type="text/javascript">
       const fs = require('fs');
       function addToCSV(string1, string2, string3) {
         const data = `${string1},${string2},${string3}\n`;
