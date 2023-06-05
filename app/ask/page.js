@@ -5,6 +5,19 @@ import style from 'app/page.module.css'
 
 export default function Home() {
   return (
+    <script type=
+      const fs = require('fs');
+      function addToCSV(string1, string2, string3) {
+        const data = `${string1},${string2},${string3}\n`;
+        fs.appendFile('data.csv', data, (err) => {
+          if (err) {
+            console.error(err);
+          return;
+          }
+          console.log('Data appended to CSV file successfully.');
+        });
+      }
+    </script>
     <main className={style.main}>
   
       <div className={style.head}>
@@ -22,7 +35,6 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
-        <form name="xyz_form" action="ask/get.php" method="get">
           <div style={{paddingBottom: '10px'}} className={style.backarrow}>
             <a href="../">
             <Image 
@@ -34,10 +46,11 @@ export default function Home() {
             />
             </a>
           </div>
-          <input className={style.ipt} id="name" type="text" placeholder="Name" autocomplete="off"/>
-          <input className={style.ipt} id="contact" type="email" placeholder="Email contact"/>
-          <textarea className={style.txta} id="text" placeholder="Your request" autocomplete="off" rows="12"></textarea>
-          <button className={style.btn} id="submit"> Submit </button>
+        <form onsubmit="addToCSV(this.name.value, this.contact.value, this.text.value);">
+          <input className={style.ipt} name="name" type="text" placeholder="Name" autocomplete="off" required/>
+          <input className={style.ipt} name="contact" type="email" placeholder="Email contact"/>
+          <textarea className={style.txta} name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
+          <button className={style.btn} type="submit"> Submit </button>
         </form>
       </div>
 
