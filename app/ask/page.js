@@ -6,7 +6,7 @@ import style from 'app/page.module.css'
 export default function Home() {
   return (
     <div>
-    <scriptsrc="/scripts/create-csv.js" />
+    <script src="/scripts/create-csv.js" />
     <main className={style.main}>
   
       <div className={style.head}>
