@@ -54,7 +54,7 @@ align-items: inherit;
 .ipt {
   width:100%;
   margin-bottom: 10px;
-  resize: false;
+  resize: none;
   font-size: 2rem;
 }
 
