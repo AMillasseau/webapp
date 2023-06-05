@@ -54,7 +54,8 @@ align-items: inherit;
 
 .ipt {
   width:100%;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  autocomplete="off";
 }
 
 .tail {
