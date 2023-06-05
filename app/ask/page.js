@@ -21,7 +21,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={style.center} style="height:65%">
+      <div className={style.center} style="height: 65%">
         <input className={style.ipt} id="name" type="text" placeholder="Name" autocomplete="off"/>
         <input className={style.ipt} id="contact" type="email" placeholder="Email contact"/>
         <textarea className={style.txta} id="text" placeholder="Your request" autocomplete="off" rows="12"></textarea>
