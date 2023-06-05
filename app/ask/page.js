@@ -22,6 +22,17 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
+        <div className={style.backarrow}>
+          <a href="../">
+          <Image 
+            src="/backarrow.png"
+            alt="Back"
+            width={10}
+            height=auto
+            priority
+            />
+          </a>
+        </div>
         <input className={style.ipt} id="name" type="text" placeholder="Name" autocomplete="off"/>
         <input className={style.ipt} id="contact" type="email" placeholder="Email contact"/>
         <textarea className={style.txta} id="text" placeholder="Your request" autocomplete="off" rows="12"></textarea>
