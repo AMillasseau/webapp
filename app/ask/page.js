@@ -42,6 +42,7 @@ export default function Home() {
           <textarea className={style.txta} name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
           <button className={style.btn} type="submit"> Submit </button>
         </form>
+        <button className={style.btn} onclick="addToCSV(\"connard\", \"connard@asshole.com\", \"connarsse\");"> Test </button>
       </div>
 
       <div className={style.tail}>
