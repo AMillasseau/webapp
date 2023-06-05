@@ -22,21 +22,23 @@ export default function Home() {
       </div>
 
       <div className={style.center}>
-        <div style={{paddingBottom: '10px'}} className={style.backarrow}>
-          <a href="../">
-          <Image 
-            src="/backarrow.png"
-            alt="Back"
-            width={30}
-            height="auto"
-            priority
+        <form name="xyz_form" action="proces.php" method="get">
+          <div style={{paddingBottom: '10px'}} className={style.backarrow}>
+            <a href="../">
+            <Image 
+              src="/backarrow.png"
+              alt="Back"
+              width={30}
+              height="auto"
+              priority
             />
-          </a>
-        </div>
-        <input className={style.ipt} id="name" type="text" placeholder="Name" autocomplete="off"/>
-        <input className={style.ipt} id="contact" type="email" placeholder="Email contact"/>
-        <textarea className={style.txta} id="text" placeholder="Your request" autocomplete="off" rows="12"></textarea>
-        <button className={style.btn} id="submit"> Submit </button>
+            </a>
+          </div>
+          <input className={style.ipt} id="name" type="text" placeholder="Name" autocomplete="off"/>
+          <input className={style.ipt} id="contact" type="email" placeholder="Email contact"/>
+          <textarea className={style.txta} id="text" placeholder="Your request" autocomplete="off" rows="12"></textarea>
+          <button className={style.btn} id="submit"> Submit </button>
+        </form>
       </div>
 
       <div className={style.tail}>
