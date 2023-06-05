@@ -5,7 +5,7 @@ import style from 'app/page.module.css'
 
 export default function Home() {
   return (
-    <script type="text/javascript" src="pages/api/examples.js>
+    <script type="text/javascript" src="pages/api/examples.js">
     </script>
     <main className={style.main}>
   
