@@ -1,5 +1,5 @@
 function send() {
-            const url ="./save.php"
+            const url ="../../save.php"
             const name = document.getElementById("name").value;
             const contact = document.getElementById("contact").value;
             const message = document.getElementById("message").value;
