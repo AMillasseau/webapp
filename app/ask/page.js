@@ -4,29 +4,6 @@ import Link from 'next/link'
 import style from 'app/page.module.css'
 
 export default function Home() {
-  const saveInputValue = () => {
-    const inputValue = document.getElementById("inputField").value;
-
-    // Make an HTTP POST request to the server endpoint
-    fetch('/api/save-input', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ value: inputValue })
-    })
-      .then(response => {
-        if (response.ok) {
-          console.log('Input value saved:', inputValue);
-        } else {
-          console.log('Failed to save input value');
-        }
-      })
-      .catch(error => {
-        console.log('Error:', error);
-      });
-  };
-
   return (
     <div>
     <main className={style.main}>
@@ -57,11 +34,11 @@ export default function Home() {
             />
             </a>
           </div>
-          <form action="ask/save.php" method="get">
-          <input className={style.ipt} name="name" type="text" placeholder="Name" autocomplete="off" required/>
-          <input className={style.ipt} name="contact" type="email" placeholder="Email contact"/>
-          <textarea className={style.txta} name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
-          <button className={style.btn} type="submit"> Submit </button>
+          <form>
+          <input className={style.ipt} id="name" name="name" type="text" placeholder="Name" autocomplete="off" required/>
+          <input className={style.ipt} id="contact" name="contact" type="email" placeholder="Email contact"/>
+          <textarea className={style.txta} id="message" name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
+          <button className={style.btn} id="btn" type="submit"> Submit </button>
           </form>
       </div>
 
@@ -75,5 +52,25 @@ export default function Home() {
     
       </main>
       </div>
+      <script>
+          document.getElementById("btn").onclick = () => {
+            const url ="/save.php"
+            const name = document.getElementById("name").value;
+            const contact = document.getElementById("contact").value;
+            const message = document.getElementById("message").value;
+            makeRequest(url, name, contact, message);
+          };
+  function makeRequest(url, userName) {
+  // …
+
+  httpRequest.onreadystatechange = alertContents;
+  httpRequest.open("POST", url);
+  httpRequest.setRequestHeader(
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+  );
+  httpRequest.send(`userName=${encodeURIComponent(userName)}`);
+};
+</script>
     )
 }
