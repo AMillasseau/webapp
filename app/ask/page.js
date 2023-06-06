@@ -6,7 +6,7 @@ import style from 'app/page.module.css'
 export default function Home() {
   return (
     <div>
-    <script>
+    <script type="text/javascript">
           document.getElementById("btn").onclick = () => {
             const url ="ask/save.php"
             const name = document.getElementById("name").value;
