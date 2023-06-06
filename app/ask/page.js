@@ -54,7 +54,7 @@ export default function Home() {
       </div>
       <script>
           document.getElementById("btn").onclick = () => {
-            const url ="/save.php"
+            const url ="ask/save.php"
             const name = document.getElementById("name").value;
             const contact = document.getElementById("contact").value;
             const message = document.getElementById("message").value;
