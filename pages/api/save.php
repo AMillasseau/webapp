@@ -1,6 +1,6 @@
 <?php
 // Check if form is submitted and we have the fields we want.
-	$file = "https://webapp-amillasseau.vercel.app/message/data.txt";
+	$file = __DIR__  . "data.txt";
 	$text =  $_POST["name"];
 	// This file will create a data.txt file and put whatever is in the POST field mytext into the text and put a new line on the end.
 	// The FILE_APPEND allows you to append text to the file. LOCK_EX prevents anyone else from writing to the file at the same time.
