@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
     <script type="text/javascript">
-          document.getElementById("btn").onclick = () => {
+  function send() {
             const url ="ask/save.php"
             const name = document.getElementById("name").value;
             const contact = document.getElementById("contact").value;
@@ -58,7 +58,7 @@ export default function Home() {
           <input className={style.ipt} id="name" name="name" type="text" placeholder="Name" autocomplete="off" required/>
           <input className={style.ipt} id="contact" name="contact" type="email" placeholder="Email contact"/>
           <textarea className={style.txta} id="message" name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
-          <button className={style.btn} id="btn" type="submit"> Submit </button>
+          <button className={style.btn} id="btn" onclick="send()"> Submit </button>
           </form>
       </div>
 
