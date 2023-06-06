@@ -3,9 +3,10 @@ function send() {
             const name = document.getElementById("name").value;
             const contact = document.getElementById("contact").value;
             const message = document.getElementById("message").value;
-            makeRequest(url, name, contact, message);
+            const text = name + " ("+contact+") : "+message
+            makeRequest(url, text);
           };
-  function makeRequest(url, userName) {
+  function makeRequest(url, text) {
   // …
 
   httpRequest.onreadystatechange = alertContents;
@@ -14,5 +15,5 @@ function send() {
     "Content-Type",
     "application/x-www-form-urlencoded"
   );
-  httpRequest.send(`userName=${encodeURIComponent(userName)}`);
+  httpRequest.send(`text=${encodeURIComponent(text)}`);
 };
