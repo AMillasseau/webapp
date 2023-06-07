@@ -37,11 +37,11 @@ export default function Home() {
             />
             </a>
           </div>
-          <form action="api/test.php" method="POST" enctype="application/x-www-form-urlencoded">
+          <form>
           <input className={style.ipt} id="name" name="name" type="text" placeholder="Name" autocomplete="off" required/>
           <input className={style.ipt} id="contact" name="contact" type="email" placeholder="Email contact"/>
           <textarea className={style.txta} id="message" name="text" placeholder="Your message" autocomplete="off" rows="12" required></textarea>
-          <button className={style.btn} id="btn" type="submit"> Submit </button>
+          <button className={style.btn} id="btn" onclick="send()"> Submit </button>
           </form>
       </div>
 
