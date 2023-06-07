@@ -1,10 +1,10 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'your_username',
-  host: 'your_host',
-  database: 'your_database',
-  password: 'your_password',
+  user: 'default',
+  host: 'ep-bold-bush-653757-pooler.us-east-1.postgres.vercel-storage.com',
+  database: 'verceldb',
+  password: 'o8RGZkbHA5IB',
   port: 5432, // default PostgreSQL port
 });
 
