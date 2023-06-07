@@ -1,4 +1,4 @@
-funtion send(name, contact, message) {
+function send(name, contact, message) {
 const query = 'INSERT INTO request (Name, Email, Text) VALUES ($1, $2, $3)';
 const values = [name, contact, message];
 
